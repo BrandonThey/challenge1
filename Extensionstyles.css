@@ -1,0 +1,62 @@
+article{
+    display: grid;
+    grid-template-areas: "one two three" 
+                         "four four three" 
+                         "four four seven"
+                         "five six six"
+                         "five six six";  
+    gap: 7px;  
+}
+
+#pic1 {
+    grid-area: one;
+}
+
+#pic2 {
+    grid-area: two;
+}
+
+#pic3 {
+    grid-area: three;
+}
+
+#pic4 {
+    grid-area: four;
+}
+
+#pic5 {
+    grid-area: five;
+}
+
+#pic6 {
+    grid-area: six;
+}
+
+#pic7 {
+    grid-area: seven;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    article{
+        display: grid;
+        grid-template-areas: "one one two" 
+                             "three three four" 
+                             "three three seven"
+                             "five six six"
+                             "five six six";  
+        gap: 7px;  
+    }
+}
+
+@media screen and (max-width: 500px){
+    article {
+        display: grid;
+        grid-template-areas: "one" "two" "three" "four" "five" "six" "seven";
+        gap: 7px;
+    }
+}
