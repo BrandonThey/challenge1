@@ -8,9 +8,14 @@ article{
     gap: 7px;  
 }
 
+header {
+    height: 10vh;
+}
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 10vh;
 }
 
 nav h2 {
@@ -94,14 +99,16 @@ img {
         gap: 7px;
     }
 
+    nav h2 {
+        font-size: 25px;
+    }
     nav div {
         display: none;
     }
 
     nav img {
         display: flex;
-        width: 10%;
-        height: 10%;
-        margin-top: 10px;
+        width: 15%;
+        height: 100%;
     }
 }
