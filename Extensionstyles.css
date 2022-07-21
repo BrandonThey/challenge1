@@ -8,6 +8,33 @@ article{
     gap: 7px;  
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-size: 20px;
+}
+nav div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+nav div a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: grey;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav img {
+    display: none;
+}
+
 #pic1 {
     grid-area: one;
 }
@@ -51,6 +78,13 @@ img {
                              "five six six";  
         gap: 7px;  
     }
+
+    nav h2 {
+        font-size: 30px;
+    }
+    nav div a {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -58,5 +92,16 @@ img {
         display: grid;
         grid-template-areas: "one" "two" "three" "four" "five" "six" "seven";
         gap: 7px;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    nav img {
+        display: flex;
+        width: 10%;
+        height: 10%;
+        margin-top: 10px;
     }
 }
